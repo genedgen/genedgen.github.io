@@ -139,7 +139,7 @@ type_21 = ["%s: from %s to %s"]
 type_22 = ["%s: Pros and Cons"]
 type_23 = ["%s and Contemporary %s in the United States"]
 type_24 = ["%s %s and %s"]
-type_25 = ["Reinventing (and Reimagining) %s: The Changing American %s Myth"]
+type_25 = ["Reinventing (and Reimagining) %s in %s: The Changing American %s Myth"]
 
 # socworld sentence types
 type_30 = ["%s without Borders", "%s Between East and West", "%s as Global Popular Culture", "Russian %s in Global Perspective"]
@@ -227,7 +227,7 @@ def usworld(place, practice, jarg_1, jarg_2, ancient, harvard, time, religion, u
 	elif sentence_type == type_24:
 		print(sentence % (jarg_1, practice, father))
 	elif sentence_type == type_25:
-		print(sentence % (us_event, jarg_1))
+		print(sentence % (practice, us_event, jarg_1))
 
 def socworld(place, practice, jarg_1, jarg_2, ancient, harvard, time, religion, us_event, us_topic, author, celeb, father,year_1,year_2, person):
 	# Choose specific template at random
