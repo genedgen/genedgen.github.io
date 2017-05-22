@@ -250,7 +250,7 @@ def socworld(place, practice, jarg_1, jarg_2, ancient, harvard, time, religion, 
 		print(sentence % (person, place))
 	elif sentence_type == type_36:
 		print(sentence % (practice, jarg_1))
-def generate(subject):
+def generate():
 	# generate random word for each slot
 	place = random.choice(places)
 	practice = random.choice(practices)
@@ -287,7 +287,4 @@ def generate(subject):
 	elif subject == socworld:
 		socworld(place, practice, jarg_1, jarg_2, ancient, harvard, time, religion, us_event, us_topic,author, celeb, father,year_1,year_2, person)
 # test
-generate(aesthint)
-generate(cultblf)
-generate(usworld)
-generate(socworld)
+generate()
